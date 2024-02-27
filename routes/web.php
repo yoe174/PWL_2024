@@ -90,3 +90,9 @@ Route::get('/hello', [WelcomeController::class,'hello']);
 Route::get('/index', [PageController::class,'index']);
 Route::get('/about', [PageController::class,'about']);
 Route::get('/articles/{id}', [PageController::class,'articles']);
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Yonatan Efrassetyo']);
+// });
+
+Route::get('/greeting', [WelcomeController::class,'greeting']);
