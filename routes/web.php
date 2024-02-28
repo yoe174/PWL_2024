@@ -73,15 +73,15 @@ Route::resource('photos', PhotoController::class);
 // });
 
 // p-2
-// Route::get('/user/{name?}', function ($name='John') { 
-//     return 'Nama saya '.$name; 
-// });
+Route::get('/user/{name?}', function ($name='John') { 
+    return 'Nama saya '.$name; 
+});
 
 // Route Name
 // p-1
-Route::get('/user/profile', function() { 
+// Route::get('/user/profile', function() { 
     
-    })->name('profile'); 
+//     })->name('profile'); 
 
 // });
 
